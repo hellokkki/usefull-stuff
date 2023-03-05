@@ -28,3 +28,7 @@ const generateUniqueString = (length) => {
 let string = Math.random().toString(36).substr(2, length);
 return string;
 }
+
+
+// sort str in alphabetical order
+const sortAlphabeticalOrder = str => str.split('').sort().join('');
