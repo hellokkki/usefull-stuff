@@ -15,7 +15,11 @@ function highAndLow(numbers){
   arr = arr.map(i => +i);
   const max = Math.max(...arr);
   const min = Math.min(...arr);
-  console.log(arr)
-  console.log(max, min)
+  return(max, min)
+}
+
+//return unique values for orders in array
+const uniqueInOrder = iterable =>{
+    return [...iterable].filter((a, i) => a !== iterable[i-1])
 }
 
